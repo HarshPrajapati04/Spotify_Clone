@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browser podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right" id="hide"></i>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item" id="hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge "><i class="fa-regular fa-circle-down" style="margin-right: 5px;">  </i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Good evening</h2>
+            <div class="new">
+                <div class="new-card">
+                    <img src="./assets/i pop superhits.jpg" class="new-card-img">
+                    <p class="new-card-title">I-Pop Super</p>
+                </div>
+                 <div class="new-card">
+                    <img src="./assets/hum to deewane.jpg" class="new-card-img">
+                    <p class="new-card-title">Hum Toh Deewane</p>
+                </div>
+                <div class="new-card">
+                    <img src="./assets/u i & classic era.jpg" class="new-card-img">
+                    <p class="new-card-title">You, I & Classic era</p>
+                </div>
+                <div class="new-card">
+                    <img src="./assets/punjabi.jpg" class="new-card-img">
+                    <p class="new-card-title">#GRWM Punjabi </p>
+                </div>
+                <div class="new-card">
+                    <img src="./assets/radar india.jpg" class="new-card-img">
+                    <p class="new-card-title">RADAR India</p>
+                </div>
+                <div class="new-card">
+                    <img src="./assets/newdance.jpeg" class="new-card-img">
+                    <p class="new-card-title">New in Dance</p>
+                 </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/with you.jpg" class="card-img">
+                    <p class="card-title">With You</p>
+                     <p class="card-info">AP Dhillon</p>
+                    
+                </div>
+                 <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                     <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/APD.jpeg" class="card-img">
+                    <p class="card-title">AP Dhillon</p>
+                     <p class="card-info">Artist</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/kari.jpeg" class="card-img">
+                    <p class="card-title">Kari_Sagar</p>
+                     <p class="card-info">By Lucifer Evens</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/i pop.jpeg" class="card-img">
+                    <p class="card-title">I-Pop Superhits</p>
+                     <p class="card-info">Biggest hits from your favourite pop stars...
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/new in dance.jpg" class="card-img">
+                    <p class="card-title">New in Dance</p>
+                     <p class="card-info">Catch Badshah & Payal Dev's latest...</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/sidhu.jpeg" class="card-img">
+                    <p class="card-title">Sidhu Moose Wala Radio..</p>
+                     <p class="card-info"></p>By Spotify   
+                </div>
+                <div class="card">
+                    <img src="./assets/chai.jpeg" class="card-img">
+                    <p class="card-title">Chai & Classic</p>
+                     <p class="card-info">A cup of tea served with time retro...</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/chill.jpeg" class="card-img">
+                    <p class="card-title">Chill Station</p>
+                     <p class="card-info">Soft chill for the dreamy✨</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/aaya na tu.jpeg" class="card-img">
+                    <p class="card-title">Aaya Na Tu</p>
+                     <p class="card-info">Arjun Kanungo, Momina Mustehsan</p>
+                    
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                 <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                     <p class="card-info">Darshan Rawal</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/web series.jpeg" class="card-img">
+                    <p class="card-title">Web Series Hits</p>
+                     <p class="card-info">Playlist dedicated to all the Web Series lovers. Cove...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/na sata.jpeg" class="card-img">
+                    <p class="card-title">Na Sata(From "Highway Love")</p>
+                     <p class="card-info">Saudur</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/champagne.jpeg" class="card-img">
+                    <p class="card-title">Champagne Talk</p>
+                     <p class="card-info">King</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/bye.jpeg" class="card-img">
+                    <p class="card-title">Bye</p>
+                     <p class="card-info">Aditya Bhardwaj</p>
+                </div>
+            </div>
+
+            <h2>Book Club</h2>
+            <div class="cards-container">
+                 <div class="card">
+                    <img src="./assets/the_lit.jpeg" class="card-img">
+                    <p class="card-title">The Lit Pickers</p>
+                     <p class="card-info">Maed in India</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/from.jpeg" class="card-img">
+                    <p class="card-title">From the bookshel...</p>
+                     <p class="card-info">Forbes India</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/lit_nama.jpeg" class="card-img">
+                    <p class="card-title">Lit Nama</p>
+                     <p class="card-info">IVM Podcasts</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/2000.jpeg" class="card-img">
+                    <p class="card-title">2000 Books-Busi...</p>
+                     <p class="card-info">Mani Vaya</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/one_more.jpeg" class="card-img">
+                    <p class="card-title">One More Chapter</p>
+                     <p class="card-info">Clara and Clare</p>
+                </div>
+            </div>
+
+            <h2>Popular radio</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/arijit radio" class="card-img">
+                    <p class="card-title">Arijit Singh Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/pritam" class="card-img">
+                    <p class="card-title">Pritam Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/ap radio" class="card-img">
+                    <p class="card-title">AP Dhillon Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/king_radio" class="card-img">
+                    <p class="card-title">King Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/taylor_radio" class="card-img">
+                    <p class="card-title">Taylor Swify Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/kishore_radio" class="card-img">
+                    <p class="card-title">Kishore Kumar Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/kk radio" class="card-img">
+                    <p class="card-title">KK Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/darshan radio" class="card-img">
+                    <p class="card-title">Darshan Raval Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/atif" class="card-img">
+                    <p class="card-title">Atif Aslam Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/madhur" class="card-img">
+                    <p class="card-title">Madhur Sharma Radio</p>
+                     <p class="card-info">By Spotify</p>
+                </div>  
+            </div>
+
+            <h2>Podcast Charts</h2>
+            <div class="cards-container">
+                 <div class="card">
+                    <img src="./assets/the ranveer.jpeg" class="card-img">
+                    <p class="card-title">The Ranveer Show</p>
+                     <p class="card-info">BeerBiceps</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/shri krishna.jpeg" class="card-img">
+                    <p class="card-title">Shri Krishna leela...</p>
+                     <p class="card-info">Spotify Studios</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/true.jpeg" class="card-img">
+                    <p class="card-title">True Story Bro! wit...</p>
+                     <p class="card-info">Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/on purpose.jpeg" class="card-img">
+                    <p class="card-title">On Purpose with J...</p>
+                     <p class="card-info">iHeart Podcasts</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/psychology.jpeg" class="card-img">
+                    <p class="card-title">Psychology In Hindi</p>
+                     <p class="card-info">Saurabh Gandhi</p>
+                </div>
+            </div>
+
+             <h2>Made for harsh</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/daily1.jpeg" class="card-img">
+                    <p class="card-title">Daily Mix 1</p>
+                     <p class="card-info">Darshan Raval, Aditya Yadav, Madhur Sharm...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/daily2.jpeg" class="card-img">
+                    <p class="card-title">Daily Mix 2</p>
+                     <p class="card-info">AP Dhillon, Anirudh Ravichander, Varinder...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/daily3.jpeg" class="card-img">
+                    <p class="card-title">Daily Mix 3</p>
+                     <p class="card-info">A.R. Rahman, Pritam, Vishal-Shekhar and...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/daily4.jpeg" class="card-img">
+                    <p class="card-title">Daily Mix 4</p>
+                     <p class="card-info">Kishore Kumar, Mukesh, Mohammed Rafi and...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/daily5.jpeg" class="card-img">
+                    <p class="card-title">Daily Mix 5</p>
+                     <p class="card-info">Ramil Ganjoo, Vismay Patel, Akshath and more</p>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div>
+                    <img src="./assets/with you.jpg" class="alb-img">
+                </div>
+                <div class="tra-name">
+                    <div class="tra-title">
+                        <p class="b1">With You</p>
+                        <p class="b2">AP Dhillon</p>
+                    </div>
+                </div>
+                <div class="alb-icons">
+                    <i class="fa-regular fa-heart heart"></i>
+                    <span class="material-symbols-outlined pic">
+                        picture_in_picture_alt</span>
+                </div> 
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">1:18</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">2:24</span>
+                 </div>
+            </div>
+            <div class="controls">
+                <i class="fa-regular fa-file-audio" id="con"></i>
+                <span class="material-symbols-outlined" id="con">
+                    mic</span>
+                <span class="material-symbols-outlined" id="con">
+                        queue_music</span>
+                <span class="material-symbols-outlined" id="con">
+                         important_devices</span>
+                <span class="material-symbols-outlined" id="con">
+                            volume_up</span>
+                <input type="range" id="volume" name="volume" min="0" max="11" class="vol" id="con" />
+                <label for="volume"></label>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
